@@ -1,0 +1,24 @@
+Build a GUI application using C++ code that calculates fractions. Pretend that your potential user is a grade school student just learning about using fractions - so your application must be robust and friendly.
+
+The UI will be described in more detail below, but here are some restrictions on how your application needs to be put together and deployed (or "handed in"):
+
+The Fraction class and its exception class, from your assignment 2 solution, must be placed in an external library - a *.dll file. This operation would not normally be necessary as the Fraction class is very small and would be just fine included in the application's executable. This is to give you experience in building a Dynamic Link Library. This can be done in Eclipse or Visual Studio. Your GUI project will need to be able to refer to and use the contents of the *.dll file.
+You must include your name in the title of the GUI window that you construct, as in "Fraction Calculator by Ima Student".
+Your TA will not build your application. You must supply the *.exe file and *.dll file to the TA, who will run both in the same folder. Note that our TAs are Windows users! If you wish you can construct a deployment package, but this is not necessary for this straight-forward application.
+More detail is given below, but you do not have to construct the GUI using C++. In Visual Studio you can use C++, but Microsoft would prefer that you use C# or Visual Basic. Regardless of what language you use to construct the GUI, it needs to build to an executable and needs to use and depend on the *.dll file built from C++ code.
+The user interface allows for the entry of four integer numbers (positive or negative) for the two fractions, the selection of an operation (addition, subtraction, multiplication or division only) and then the press of an "equals" button will display the resulting fraction. Error messages can be part of the GUI window or displayed in a message box.
+
+The window should include the following functionality:
+
+The mathematical operations are limited to the ones listed above and should be chosen from a list, combo box, spinner or even a set of radio buttons.
+If any number location is empty, or does not represent a valid number, then a specific error message should be displayed, and no calculation attempted.
+If either denominator is zero, an error message should be displayed.
+If the result denominator would be one or the numerator is zero, then the denominator should not be displayed - only the numerator.
+If the result is negative, then the negative sign should be on the numerator only.
+The result fraction should be normalized (ie. reduced by the greatest common divisor.)
+Keyboard navigation should be sensible - the cursor should start in the left side numerator, and pressing the tab key should progress through the window in a sensible manner.
+The user should not be able to enter numbers in the answer fraction.
+Pressing the enter key should be equivalent to clicking on the "equals" button.
+You should should be able to use an Alt-key combination (<Alt>c, for example) to invoke the close button.
+The close button should end the application. (Hint: invoke the close() function.)
+In general, your window should never be in a state that does not make sense. For example, if input fractions are changed in any way, the old answer fraction should be wiped out.
