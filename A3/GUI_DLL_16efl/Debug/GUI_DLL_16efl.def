@@ -1,0 +1,7 @@
+LIBRARY GUI_DLL_16efl
+
+EXPORTS
+	Fraction
+	FractionException
+	operator<<
+	operator>>

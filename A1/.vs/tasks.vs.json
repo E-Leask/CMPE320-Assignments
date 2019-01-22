@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-InsultsSource",
+      "appliesTo": "InsultsSource.txt",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-InsultsSource",
+      "appliesTo": "InsultsSource.txt",
+      "type": "launch"
+    }
+  ]
+}

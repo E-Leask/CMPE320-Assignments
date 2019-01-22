@@ -1,0 +1,4 @@
+﻿  fraction_16efl.cpp
+c:\users\eric leask\documents\eng year 3\320-c++\assignments\a2\fraction_16efl.h(55): warning C4251: 'FractionException::message': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'FractionException'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+LINK : fatal error LNK1104: cannot open file 'GUI_DLL_16efl.def'
